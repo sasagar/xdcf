@@ -86,7 +86,7 @@ const Header = () => {
 						</li>
 					</ul>
 					<a
-						href="#top"
+						href="https://xdufes.connpass.com/event/336906/"
 						className="rounded-full bg-foreground px-10 py-2 bg-mintGreen-400 text-white border border-white hover:border-mintGreen-400 hover:text-mintGreen-400 hover:bg-white transition-all text-center md:text-left"
 					>
 						無料で参加する

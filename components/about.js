@@ -11,7 +11,7 @@ const About = () => {
 				<div className="mt-0 md:mt-4 my-4">
 					<div className="mb-2">無料</div>
 					<a
-						href="#top"
+						href="https://xdufes.connpass.com/event/336906/"
 						className="inline-block w-full md:w-fit text-center uppercase font-josefin border rounded-full px-14 py-3 text-white bg-mintGreen-400 border-background hover:bg-mintGreen-100 hover:text-mintGreen-400 transition-all hover:no-underline"
 					>
 						参加する
