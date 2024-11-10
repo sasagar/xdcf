@@ -26,7 +26,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       # pnpmを利用しているので
-      - run: npm install pnpm
+      - run: npm install -g pnpm && pnpm install
 
       # 静的ファイルを生成する
       - name: Build App
