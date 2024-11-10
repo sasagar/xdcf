@@ -1,5 +1,4 @@
 import MainFlex from "./mainFlex";
-import { id } from "../.next/server/chunks/ssr/af969_next_dist_compiled_webpack_bundle5_bc0d5f";
 
 /**
  * NewsList component that displays a list of news items.
