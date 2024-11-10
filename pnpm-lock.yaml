@@ -21,6 +21,12 @@ importers:
       '@biomejs/biome':
         specifier: ^1.9.4
         version: 1.9.4
+      '@iconify-json/basil':
+        specifier: ^1.2.1
+        version: 1.2.1
+      '@iconify/react':
+        specifier: ^5.0.2
+        version: 5.0.2(react@19.0.0-rc-5c56b873-20241107)
       postcss:
         specifier: ^8.4.47
         version: 8.4.47
@@ -89,6 +95,17 @@ packages:
 
   '@emnapi/runtime@1.3.1':
     resolution: {integrity: sha512-kEBmG8KyqtxJZv+ygbEim+KCGtIq1fC22Ms3S4ziXmYKm8uyoLX0MHONVKwp+9opg390VaKRNt4a7A9NwmpNhw==}
+
+  '@iconify-json/basil@1.2.1':
+    resolution: {integrity: sha512-G4VkoB8Af0DQqr6Zgk9vVM5nUZCoccPM7olCmKPSTyG1YF78w6Q2+iJ/KJPPpIt7wtaQZ9KXOy5D7/Uv6BZynQ==}
+
+  '@iconify/react@5.0.2':
+    resolution: {integrity: sha512-wtmstbYlEbo4NDxFxBJkhkf9gJBDqMGr7FaqLrAUMneRV3Z+fVHLJjOhWbkAF8xDQNFC/wcTYdrWo1lnRhmagQ==}
+    peerDependencies:
+      react: '>=16'
+
+  '@iconify/types@2.0.0':
+    resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -804,6 +821,17 @@ snapshots:
     dependencies:
       tslib: 2.8.1
     optional: true
+
+  '@iconify-json/basil@1.2.1':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify/react@5.0.2(react@19.0.0-rc-5c56b873-20241107)':
+    dependencies:
+      '@iconify/types': 2.0.0
+      react: 19.0.0-rc-5c56b873-20241107
+
+  '@iconify/types@2.0.0': {}
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:

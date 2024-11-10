@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { Icon } from "@iconify/react";
 
 /**
  * The header component for the X Designers Career Fes website.
@@ -87,9 +88,12 @@ const Header = () => {
 					</ul>
 					<a
 						href="https://xdufes.connpass.com/event/336906/"
-						className="rounded-full bg-foreground px-10 py-2 bg-mintGreen-400 text-white border border-white hover:border-mintGreen-400 hover:text-mintGreen-400 hover:bg-white transition-all text-center md:text-left"
+						target="_blank"
+						className="flex items-center gap-2 rounded-full bg-foreground px-10 py-2 bg-mintGreen-400 text-white border border-white hover:border-mintGreen-400 hover:text-mintGreen-400 hover:bg-white transition-all text-center md:text-left"
+						rel="noreferrer"
 					>
 						無料で参加する
+						<Icon icon={"basil:share-box-outline"} />
 					</a>
 				</nav>
 			</header>

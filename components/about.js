@@ -1,6 +1,14 @@
 import SubSectionTitle from "./subSectionTitle";
 import MainFlex from "./mainFlex";
+import { Icon } from "@iconify/react";
 
+/**
+ * The About component for the X Designers Career Fes website.
+ *
+ * This component renders all the relevant information about the event, including the date, time, location, and official social media accounts.
+ *
+ * @return {JSX.Element} The JSX element representing the About component.
+ */
 const About = () => {
 	return (
 		<>
@@ -12,9 +20,11 @@ const About = () => {
 					<div className="mb-2">無料</div>
 					<a
 						href="https://xdufes.connpass.com/event/336906/"
-						className="inline-block w-full md:w-fit text-center uppercase font-josefin border rounded-full px-14 py-3 text-white bg-mintGreen-400 border-background hover:bg-mintGreen-100 hover:text-mintGreen-400 transition-all hover:no-underline"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="flex items-center gap-2 w-full md:w-fit text-center uppercase font-josefin border rounded-full px-14 py-3 text-white bg-mintGreen-400 border-background hover:bg-mintGreen-100 hover:text-mintGreen-400 transition-all hover:no-underline"
 					>
-						参加する
+						参加する <Icon icon={"basil:share-box-outline"} />
 					</a>
 				</div>
 			</MainFlex>
@@ -67,15 +77,21 @@ const About = () => {
 					<div className="mt-8 flex flex-col md:flex-row gap-4 md:gap-6 md:justify-start">
 						<a
 							href="https://www.adobe.com/jp/information/company/map.html"
-							className="inline-block text-center px-12 py-3 border border-gray-300 hover:bg-mintGreen-400 hover:border-mintGreen-400 rounded-full text-foreground hover:text-white hover:no-underline transition-all"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="flex items-center gap-2 text-center px-12 py-3 border border-gray-300 hover:bg-mintGreen-400 hover:border-mintGreen-400 rounded-full text-foreground hover:text-white hover:no-underline transition-all"
 						>
 							会場の詳細はこちら
+							<Icon icon={"basil:share-box-outline"} />
 						</a>
 						<a
 							href="https://maps.app.goo.gl/DZBJc2nNyR36EQ1r8"
-							className="inline-block text-center px-12 py-3 border border-gray-300 hover:bg-mintGreen-400 hover:border-mintGreen-400 rounded-full text-foreground hover:text-white hover:no-underline transition-all"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="flex items-center gap-2 text-center px-12 py-3 border border-gray-300 hover:bg-mintGreen-400 hover:border-mintGreen-400 rounded-full text-foreground hover:text-white hover:no-underline transition-all"
 						>
 							Googleマップで見る
+							<Icon icon={"basil:share-box-outline"} />
 						</a>
 					</div>
 				</div>
@@ -87,9 +103,12 @@ const About = () => {
 				<div className="pt-0 md:pt-4 py-4 flex justify-start items-center gap-4">
 					<a
 						href="https://x.com/xdcfjp"
-						className="more-link font-josefin border rounded-full px-6 py-1 border-foreground leading-none hover:bg-foreground hover:text-background transition-all"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="flex items-center gap-2 more-link font-josefin border rounded-full px-6 py-1 border-foreground leading-none hover:bg-foreground hover:text-background transition-all"
 					>
 						X (旧 Twitter)
+						<Icon icon={"basil:share-box-outline"} />
 					</a>
 					{/* <a
 						href="#top"
