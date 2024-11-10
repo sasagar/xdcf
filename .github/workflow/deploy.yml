@@ -1,0 +1,51 @@
+name: "Deploy XDCF Site"
+
+on:
+  # これをつかうと、手動デプロイできる
+  workflow_dispatch:
+  # mainブランチにpushがあったときにも実行される
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    # Nodeのバージョンをここで一括管理
+    strategy:
+      matrix:
+        node-version: [20.x]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      # pnpmを利用しているので
+      - run: npm install pnpm
+
+      # 静的ファイルを生成する
+      - name: Build App
+        run: pnpm run build
+
+      - name: FTP Deploy
+        # FTPデプロイできるアクションがあるので、それを利用する
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        # FTP接続に必要な環境変数を設定する
+        with:
+          # 例： username.sakura.ne.jp
+          server: ${{ secrets.FTP_SERVER }}
+          # 例： username
+          username: ${{ secrets.FTP_USERNAME }}
+          # FTPパスワード(sshログインするときとかに使うやつ)
+          password: ${{ secrets.FTP_PASSWORD }}
+          # yarn buildによって生成される静的ファイルのディレクトリ
+          local-dir: ./out/
+          # さくらのレンタルサーバー上の、デプロイしたいディレクトリ
+          # 例: /home/username/www/dev/
+          server-dir: /home/${{ secrets.FTP_USERNAME }}/www/${{ secrets.FTP_DEPLOY_DIR }}
+          protocol: ftps
