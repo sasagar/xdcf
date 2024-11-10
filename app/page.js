@@ -9,7 +9,7 @@ import Sponsor from "@/components/sponsor";
 export const metadata = {
 	title: "X Designers Career Fes",
 	description:
-		"2024年12月25日開催！ X Designers Career Fes（クロス・デザイナーズ・キャリア・フェス）公式サイト",
+		"2024年12月15日開催！ X Designers Career Fes（クロス・デザイナーズ・キャリア・フェス）公式サイト",
 };
 
 /**
