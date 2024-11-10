@@ -8,7 +8,7 @@ import Image from "next/image";
 const Casts = () => {
 	return (
 		<section className="max-w-5xl mx-auto mt-10 flex flex-col md:flex-row justify-between items-start border-y border-dashed border-gray-300">
-			<ul className="text-xl font-josefin uppercase py-4 flex md:block flex-row gap-4 px-4 md:px-0">
+			<ul className="text-xl font-josefin uppercase py-4 flex md:block flex-row gap-4 px-4 md:px-0 md:w-1/3">
 				<li className="pt-0 md:pt-4 py-4">
 					<a href="#staff" className="text-foreground">
 						Staff
@@ -20,7 +20,7 @@ const Casts = () => {
 					</a>
 				</li>
 			</ul>
-			<div className="w-full px-4 md:px-0md:w-2/3">
+			<div className="w-full px-4 md:px-0 md:w-2/3">
 				<div
 					id="staff"
 					className="grid grid-cols-2 md:grid-cols-3 divide-x divide-y divide-dashed border-r border-b border-dashed border-gray-300"
