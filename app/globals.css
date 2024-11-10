@@ -14,8 +14,55 @@
   }
 }
 
+html {
+  visibility: hidden;
+}
+html.wf-active {
+  visibility: visible;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
   font-synthesis: none;
+}
+
+a {
+  @apply text-mintGreen-400 hover:underline underline-offset-4;
+}
+
+header a {
+  @apply text-foreground hover:no-underline hover:text-mintGreen-400 transition-all;
+}
+
+p + p {
+  @apply mt-7;
+}
+
+.news-list {
+  a {
+    @apply text-foreground;
+  }
+}
+
+.more-link {
+  @apply text-foreground hover:no-underline;
+}
+
+table {
+  @apply divide-y divide-dashed divide-gray-300 w-full;
+
+  thead,
+  tbody {
+    @apply divide-y divide-dashed divide-gray-300;
+  }
+
+  tr {
+    @apply block text-left py-4;
+
+    th:first-of-type,
+    td:first-of-type {
+      @apply w-28;
+    }
+  }
 }
