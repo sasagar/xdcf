@@ -30,6 +30,8 @@ jobs:
 
       # 静的ファイルを生成する
       - name: Build App
+        env:
+          NEXT_PUBLIC_ADOBE_FONTS_KIT_ID: ${{ secrets.NEXT_PUBLIC_ADOBE_FONTS_KIT_ID }}
         run: pnpm run build
 
       - name: FTP Deploy
