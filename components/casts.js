@@ -89,8 +89,14 @@ const Casts = () => {
 						x="256"
 						y="256"
 					/>
-					<Cast title="Designer" name="本間さん" />
-					<Cast title="Programmer" name="けいすけ" />
+					<Cast
+						title="PROJECT MANAGER"
+						name="本間恵"
+						img="/staff/homma.png"
+						x="1024"
+						y="1024"
+					/>
+					{/* <Cast title="Programmer" name="けいすけ" /> */}
 				</div>
 				<div
 					id="mc"
