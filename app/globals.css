@@ -66,3 +66,16 @@ table {
     }
   }
 }
+
+.cast-block {
+  @apply relative;
+  /* @apply border-dashed border-r border-b border-gray-300; */
+  &::after {
+    @apply block border-dashed border border-gray-300 absolute pointer-events-none -z-10;
+    top: -0.5px;
+    left: -0.5px;
+    width: calc(100% + 1px);
+    height: calc(100% + 1px);
+    content: '';
+  }
+}

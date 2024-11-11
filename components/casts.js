@@ -7,7 +7,7 @@ import Image from "next/image";
  */
 const Casts = () => {
 	return (
-		<section className="max-w-5xl mx-auto mt-10 flex flex-col md:flex-row justify-between items-start border-y border-dashed border-gray-300">
+		<section className="max-w-5xl mx-auto mt-10 flex flex-col md:flex-row justify-between items-start border-t md:border-y border-dashed border-gray-300">
 			<ul className="text-xl font-josefin uppercase py-4 flex md:block flex-row gap-4 px-4 md:px-0 md:w-1/3">
 				<li className="pt-0 md:pt-4 py-4">
 					<a href="#staff" className="text-foreground">
@@ -21,10 +21,7 @@ const Casts = () => {
 				</li>
 			</ul>
 			<div className="w-full px-4 md:px-0 md:w-2/3">
-				<div
-					id="staff"
-					className="grid grid-cols-2 md:grid-cols-3 divide-x divide-y divide-dashed border-r border-b border-dashed border-gray-300"
-				>
+				<div id="staff" className="grid grid-cols-2 md:grid-cols-3">
 					<CastTitle title="Staff" />
 					<Cast
 						title="Adobe Community Evangelist"
@@ -97,11 +94,9 @@ const Casts = () => {
 						y="1024"
 					/>
 					{/* <Cast title="Programmer" name="けいすけ" /> */}
+					<Cast />
 				</div>
-				<div
-					id="mc"
-					className="grid grid-cols-2 md:grid-cols-3 divide-x divide-y divide-dashed border-r border-b border-dashed border-gray-300"
-				>
+				<div id="mc" className="grid grid-cols-2 md:grid-cols-3">
 					<CastTitle title="MC" />
 					<Cast
 						title="DESIGNER / PROGRAMMER"
@@ -110,6 +105,7 @@ const Casts = () => {
 						x="3265"
 						y="3265"
 					/>
+					<Cast className="hidden md:block" />
 				</div>
 			</div>
 		</section>
@@ -127,10 +123,17 @@ const Casts = () => {
  * @param {string} [props.y="600"] - The height of the cast member's image.
  * @return {JSX.Element} The JSX element representing the Cast component.
  */
-const Cast = ({ title, name, img = "", x = "600", y = "600" }) => {
+const Cast = ({
+	title,
+	name,
+	img = "",
+	x = "600",
+	y = "600",
+	className = "",
+}) => {
 	return (
-		<div className="p-4">
-			<div className="w-full aspect-square bg-gray-300 mb-3">
+		<div className={`cast-block p-4 ${className}`}>
+			<div className="w-full aspect-square bg-background mb-3">
 				{img !== "" ? (
 					<Image src={img} width={x} height={y} alt="{name}" />
 				) : (
