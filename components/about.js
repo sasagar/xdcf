@@ -12,11 +12,11 @@ import { Icon } from "@iconify/react";
 const About = () => {
 	return (
 		<>
-			<div id="about" className="max-w-5xl mx-auto mt-10">
+			<div id="about" className="max-w-5xl mx-auto mt-10 md:mt-20">
 				<SubSectionTitle en="About" jp="イベント概要" />
 			</div>
 			<MainFlex title="Join" className="border-b border-dashed border-gray-300">
-				<div className="mt-0 md:mt-4 my-4">
+				<div className="mt-0 md:mt-8 mb-4 md:mb-8">
 					<div className="mb-2">無料</div>
 					<a
 						href="https://xdufes.connpass.com/event/336906/"
@@ -33,7 +33,7 @@ const About = () => {
 				className="border-b border-dashed border-gray-300"
 				comingsoon="true"
 			>
-				<div className="pt-0 md:pt-4 py-4 border-b border-dashed border-gray-300">
+				<div className="mt-0 md:mt-8 mb-4 md:mb-8 border-b border-dashed border-gray-300">
 					<div className="text-2xl">
 						<time dateTime="2024-12-15">
 							2024年<span className="text-4xl">12</span>月
@@ -66,7 +66,7 @@ const About = () => {
 				title="Access"
 				className="border-b border-dashed border-gray-300"
 			>
-				<div className="pb-8 md:py-4">
+				<div className="mt-0 md:mt-8 mb-4 md:mb-8">
 					<div className="text-4xl">Adobeオフィス</div>
 					<div className="mt-8">
 						{/* 会場: オフライン＆オンライン
@@ -100,7 +100,7 @@ const About = () => {
 				title="Official SNS"
 				className="border-b border-dashed border-gray-300"
 			>
-				<div className="pt-0 md:pt-4 py-4 flex justify-start items-center gap-4">
+				<div className="mt-0 md:mt-8 mb-4 md:mb-8 flex justify-start items-center gap-4">
 					<a
 						href="https://x.com/xdcfjp"
 						target="_blank"

@@ -7,7 +7,7 @@ import MainFlex from "./mainFlex";
  */
 const NewsList = () => {
 	return (
-		<MainFlex title="News" idName="news">
+		<MainFlex title="News" idName="news" className="md:mb-20">
 			<ul className="news-list flex flex-col divide-y divide-gray-300 divide-dashed">
 				<li className="news-item py-4">
 					<a

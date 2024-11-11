@@ -13,7 +13,13 @@ const Footer = () => {
 					href="/"
 					className="flex gap-4 items-center text-background hover:no-underline"
 				>
-					<Image src="/logo.png" alt="XDCF" width={50} height={50} />
+					<Image
+						src="/logo.png"
+						alt="XDCF"
+						width={50}
+						height={50}
+						className="rounded-full"
+					/>
 					XDCF
 				</a>
 			</h4>

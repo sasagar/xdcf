@@ -130,7 +130,7 @@ const Casts = () => {
 const Cast = ({ title, name, img = "", x = "600", y = "600" }) => {
 	return (
 		<div className="p-4">
-			<div className="w-full aspect-square bg-gray-300">
+			<div className="w-full aspect-square bg-gray-300 mb-3">
 				{img !== "" ? (
 					<Image src={img} width={x} height={y} alt="{name}" />
 				) : (

@@ -4,7 +4,7 @@ import SubSectionTitle from "./subSectionTitle";
 const Sponsor = () => {
 	return (
 		<section>
-			<div className="max-w-5xl mx-auto mt-10">
+			<div className="max-w-5xl mx-auto mt-10 md:mt-20">
 				<SubSectionTitle en="Sponsors" jp="スポンサー" />
 			</div>
 

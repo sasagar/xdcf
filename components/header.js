@@ -15,11 +15,17 @@ const Header = () => {
 		"h-1 w-6 my-1 rounded-full bg-foreground transition ease transform duration-300";
 
 	return (
-		<div className="max-w-7xl mx-auto px-4 md:px-0">
+		<div className="max-w-7xl mx-auto px-4 md:px-0 md:mb-11">
 			<header className="px-0 py-9 flex justify-between items-center">
 				<h1 className="font-josefin italic text-3xl">
 					<a href="/" className="flex gap-6 items-center">
-						<Image src="/logo.png" alt="XDCF" width={50} height={50} />
+						<Image
+							src="/logo.png"
+							alt="XDCF"
+							width={50}
+							height={50}
+							className="rounded-full"
+						/>
 						XDCF
 					</a>
 				</h1>
@@ -89,7 +95,7 @@ const Header = () => {
 					<a
 						href="https://xdufes.connpass.com/event/336906/"
 						target="_blank"
-						className="flex items-center gap-2 rounded-full bg-foreground px-10 py-2 bg-mintGreen-400 text-white border border-white hover:border-mintGreen-400 hover:text-mintGreen-400 hover:bg-white transition-all text-center md:text-left"
+						className="flex items-center gap-2 rounded-full bg-foreground px-10 py-2 bg-mintGreen-400 text-white hover:text-mintGreen-400 hover:bg-white transition-all text-center md:text-left"
 						rel="noreferrer"
 					>
 						無料で参加する
