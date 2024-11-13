@@ -8,14 +8,20 @@ import Image from "next/image";
 const Casts = () => {
 	return (
 		<section className="max-w-5xl mx-auto mt-10 flex flex-col md:flex-row justify-between items-start border-t md:border-y border-dashed border-gray-300">
-			<ul className="text-xl font-josefin uppercase py-4 flex md:block flex-row gap-4 px-4 md:px-0 md:w-1/3">
+			<ul className="text-xl font-josefin uppercase mt-4 md:mt-0 py-4 flex md:block flex-row gap-4 px-4 md:px-0 md:w-1/3">
 				<li className="pt-0 md:pt-4 py-4">
-					<a href="#staff" className="text-foreground">
+					<a
+						href="#staff"
+						className="text-foreground more-link font-josefin border md:border-0 rounded-full md:rounded-none px-6 py-0 md:p-0 border-foreground leading-none hover:bg-foreground md:hover:bg-transparent hover:text-background md:hover:text-inherit transition-all hover:no-underline md:hover:underline"
+					>
 						Staff
 					</a>
 				</li>
 				<li className="pt-0 md:pt-4 py-4">
-					<a href="#mc" className="text-foreground">
+					<a
+						href="#mc"
+						className="text-foreground more-link font-josefin border md:border-0 rounded-full md:rounded-none px-6 py-0 md:p-0 border-foreground leading-none hover:bg-foreground md:hover:bg-transparent hover:text-background md:hover:text-inherit transition-all hover:no-underline md:hover:underline"
+					>
 						MC
 					</a>
 				</li>

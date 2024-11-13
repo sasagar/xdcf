@@ -10,20 +10,19 @@ const NewsList = () => {
 		<MainFlex title="News" idName="news" className="md:mb-20">
 			<ul className="news-list flex flex-col divide-y divide-gray-300 divide-dashed">
 				<li className="news-item py-4">
-					<a
-						href="#top"
-						className="news-link flex flex-col md:flex-row items-baseline rounded"
-					>
+					<span className="news-link flex flex-col md:flex-row items-baseline rounded">
 						<time className="text-base font-dinNarrow w-36">2024.11.15</time>
 						<p className="text-base font-notoSans flex-1">
 							公式サイトを公開しました！
 						</p>
-					</a>
+					</span>
 				</li>
 				<li className="news-item py-4">
 					<a
 						href="https://x.com/xdcfjp"
+						target="_blank"
 						className="news-link flex flex-col md:flex-row items-baseline rounded"
+						rel="noopener noreferrer"
 					>
 						<time className="text-base font-dinNarrow w-36">2024.10.18</time>
 						<p className="text-base font-notoSans flex-1">

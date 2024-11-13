@@ -9,7 +9,7 @@ const SectionTitle = ({ title }) => {
 		<div className="w-full relative mt-5">
 			<div className="w-full md:w-[max(400px,calc((100vw-1024px)/2+400px))] bg-foreground absolute -z-10 h-[calc(100%-12px)]" />
 			<div className="max-w-5xl mx-auto">
-				<h2 className="text-5xl md:text-7xl text-background uppercase font-din font-medium leading-none">
+				<h2 className="px-2 md:px-0 text-5xl md:text-7xl text-background uppercase font-din font-medium leading-none">
 					{title}
 				</h2>
 			</div>

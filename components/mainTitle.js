@@ -1,6 +1,6 @@
-const MainTitle = () => {
+const MainTitle = ({ className }) => {
 	return (
-		<div className="w-full relative z-10">
+		<div className={`w-full relative z-10 ${className}`}>
 			<svg viewBox="0 0 288 40" className="w-full">
 				<title>X DESIGNERS CAREER FES</title>
 				<text
