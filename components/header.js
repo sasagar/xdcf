@@ -42,7 +42,7 @@ const Header = () => {
 						<button
 							type="button"
 							className="flex flex-col h-12 w-12 rounded justify-center items-center group md:hidden"
-							onClick={() => !isOpen && setIsOpen(!isOpen)}
+							onClick={() => setIsOpen(!isOpen)}
 						>
 							<div
 								className={`${genericHamburgerLine} ${
