@@ -106,7 +106,7 @@ const Header = () => {
 					</nav>
 				</header>
 			</div>
-			<div className="blank h-24" />
+			<div className="blank h-24 md:h-32" />
 		</>
 	);
 };
