@@ -67,12 +67,11 @@ const About = () => {
 				className="border-b border-dashed border-gray-300"
 			>
 				<div className="mt-0 md:mt-8 mb-4 md:mb-8">
-					<div className="text-4xl">Adobeオフィス</div>
+					<div className="text-4xl">アドビ株式会社 / Adobe KK</div>
 					<div className="mt-8">
 						{/* 会場: オフライン＆オンライン
 						<br /> */}
-						住所: 東京都品川区大崎1-11-2
-						ゲートシティ大崎イーストタワー　Adobeオフィス内
+						住所: 東京都品川区大崎1-11-2 ゲートシティ大崎イーストタワー
 					</div>
 					<div className="mt-8 flex flex-col md:flex-row gap-4 md:gap-6 md:justify-start">
 						<a

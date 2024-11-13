@@ -58,7 +58,7 @@ const KeyComponent = () => {
 					<a
 						href="https://xdufes.connpass.com/event/336906/"
 						target="_blank"
-						className="w-60 mx-auto flex items-center justify-center gap-2 rounded-full bg-foreground px-10 py-2 bg-mintGreen-400 text-white hover:text-mintGreen-400 hover:bg-white transition-all text-center md:text-left"
+						className="w-60 mx-auto flex items-center justify-center gap-2 rounded-full bg-foreground px-10 py-2 md:py-4 bg-mintGreen-400 text-white hover:text-mintGreen-400 hover:bg-white transition-all text-center md:text-left hover:no-underline"
 						rel="noreferrer"
 					>
 						無料で参加する

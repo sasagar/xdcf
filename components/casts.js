@@ -58,7 +58,7 @@ const Casts = () => {
 						y="337"
 					/>
 					<Cast
-						title="Designer"
+						title="DESIGNER"
 						name="おこじょ"
 						img="/staff/okojo.jpg"
 						x="400"
