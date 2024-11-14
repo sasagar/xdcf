@@ -4,6 +4,7 @@ import AdobeFontLoader from "@/components/adobeFontLoader";
 
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import Loading from "@/components/loading";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -25,9 +26,12 @@ export default function RootLayout({ children }) {
 		<html lang="ja">
 			<AdobeFontLoader />
 			<body className="font-notoSans">
-				<Header />
-				{children}
-				<Footer />
+				<Loading />
+				<div id="container">
+					<Header />
+					{children}
+					<Footer />
+				</div>
 			</body>
 		</html>
 	);

@@ -15,10 +15,19 @@
 }
 
 html {
-  visibility: hidden;
+  /* visibility: hidden; */
   scroll-behavior: smooth;
 }
-html.wf-active {
+
+/* html.wf-active {
+  visibility: visible;
+} */
+
+#container {
+  visibility: hidden;
+}
+
+.wf-active #container {
   visibility: visible;
 }
 
@@ -79,4 +88,22 @@ table {
     height: calc(100% + 1px);
     content: '';
   }
+}
+
+.loading {
+  @apply hidden;
+}
+
+.wf-loading {
+  .loading {
+    @apply flex;
+  }
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-400 {
+  animation-delay: 400ms;
 }
