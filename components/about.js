@@ -31,7 +31,7 @@ const About = () => {
 			<MainFlex
 				title="Date"
 				className="border-b border-dashed border-gray-300"
-				comingsoon="true"
+				comingsoon="false"
 			>
 				<div className="mt-0 md:mt-8 mb-4 md:mb-8 border-b border-dashed border-gray-300">
 					<div className="text-2xl">

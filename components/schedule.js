@@ -7,7 +7,7 @@ const Schedule = () => {
 			<div className="max-w-5xl mx-auto mt-4 md:mt-10">
 				<SubSectionTitle en="Schedule" jp="スケジュール" />
 			</div>
-			<MainFlex title="Timetable" comingsoon="true">
+			<MainFlex title="Timetable" comingsoon="false">
 				<table>
 					<thead>
 						<tr>
