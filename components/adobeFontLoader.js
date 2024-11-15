@@ -1,6 +1,12 @@
 "use client";
 import { useEffect } from "react";
 
+/**
+ * AdobeFontLoader component that loads Adobe Fonts using a Typekit script.
+ * It adds a "wf-loading" class to the HTML element while the script is loading
+ * and removes it upon completion or failure, adding "wf-inactive" if the script
+ * fails to load within the specified timeout.
+ */
 const AdobeFontLoader = () => {
 	useEffect(() => {
 		((d) => {

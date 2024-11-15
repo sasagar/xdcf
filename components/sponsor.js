@@ -1,6 +1,13 @@
 import Image from "next/image";
 import SubSectionTitle from "./subSectionTitle";
 
+/**
+ * Sponsor component that displays the sponsor section.
+ *
+ * The section contains a title, and a grid of sponsor logos.
+ *
+ * @return {JSX.Element} The JSX element representing the Sponsor component.
+ */
 const Sponsor = () => {
 	return (
 		<section>

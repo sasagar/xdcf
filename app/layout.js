@@ -6,21 +6,19 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Loading from "@/components/loading";
 
-// const geistSans = localFont({
-//   src: "./fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-// });
-// const geistMono = localFont({
-//   src: "./fonts/GeistMonoVF.woff",
-//   variable: "--font-geist-mono",
-// });
-
-// export const metadata = {
-// 	title: "X Designers Career Fes",
-// 	description:
-// 		"2024年12月25日開催！ X Designers Career Fes（クロス・デザイナーズ・キャリア・フェス）公式サイト",
-// };
-
+/**
+ * The root layout of the app.
+ *
+ * This component wraps the entire app in an <html> element and includes
+ * the Adobe font loader, a loading animation, a header, the main content,
+ * and a footer.
+ *
+ * The main content is passed as a child to this component, and should be a
+ * single JSX element.
+ *
+ * @param {{ children: JSX.Element }} props
+ * @returns {JSX.Element}
+ */
 export default function RootLayout({ children }) {
 	return (
 		<html lang="ja">
