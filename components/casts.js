@@ -107,7 +107,6 @@ const Casts = () => {
 						y="800"
 					/>
 					{/* <Cast title="Programmer" name="けいすけ" /> */}
-					<Cast />
 				</div>
 				<div id="mc" className="grid grid-cols-2 md:grid-cols-3">
 					<CastTitle title="MC" />
