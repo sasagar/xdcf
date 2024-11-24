@@ -99,6 +99,13 @@ const Casts = () => {
 						x="1024"
 						y="1024"
 					/>
+					<Cast
+						title="DESIGNER"
+						name="佐藤 実可子"
+						img="/staff/mikako.jpg"
+						x="800"
+						y="800"
+					/>
 					{/* <Cast title="Programmer" name="けいすけ" /> */}
 					<Cast />
 				</div>
