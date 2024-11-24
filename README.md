@@ -7,7 +7,7 @@ Next.jsで記述されています。(v15.0.3)
 
 ## Getting Started
 
-[!warning]
+[!WARNING]
 ビルドの際には `.env` ファイルが必要です。  
 必要なファイルは個別にご連絡ください。
 
