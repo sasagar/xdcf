@@ -23,7 +23,7 @@ const MainFlex = ({
 			<div className="w-full md:w-2/3 relative">
 				{children}
 				{comingsoon && (
-					<div className="absolute top-0 left-0 w-full h-full bg-mintGreen-400/80 text-white flex justify-center items-center text-center text-2xl uppercase font-josefin">
+					<div className="absolute top-0 left-0 w-full h-full bg-mint-green-400/80 text-white flex justify-center items-center text-center text-2xl uppercase font-josefin">
 						Coming Soon
 					</div>
 				)}

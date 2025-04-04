@@ -1,5 +1,5 @@
-import MainFlex from "./mainFlex";
-import SubSectionTitle from "./subSectionTitle";
+import MainFlex from "@/components/mainFlex";
+import SubSectionTitle from "@/components/subSectionTitle";
 
 const Schedule = () => {
 	return (
@@ -25,19 +25,27 @@ const Schedule = () => {
 							<td>開演・オープニング</td>
 						</tr>
 						<tr>
-							<td>13:50-15:20</td>
-							<td>ワークショップ</td>
+							<td>13:45-14:05</td>
+							<td>ワークショップ / アイディアソン (1)</td>
 						</tr>
 						<tr>
-							<td>15:35-15:50</td>
-							<td>ワークショップまとめタイム</td>
+							<td>14:10-14:30</td>
+							<td>ワークショップ / アイディアソン (2)</td>
 						</tr>
 						<tr>
-							<td>16:00-16:30</td>
-							<td>ワークショップ発表</td>
+							<td>14:45-15:05</td>
+							<td>ワークショップ / アイディアソン (3)</td>
 						</tr>
 						<tr>
-							<td>16:30</td>
+							<td>15:10-15:30</td>
+							<td>ワークショップ / アイディアソン (4)</td>
+						</tr>
+						<tr>
+							<td>15:45-16:15</td>
+							<td>各テーブルの発表</td>
+						</tr>
+						<tr>
+							<td>16:15</td>
 							<td>クロージング・懇親タイム</td>
 						</tr>
 						<tr>

@@ -167,7 +167,7 @@ const Cast = ({
  */
 const CastTitle = ({ title }) => {
 	return (
-		<div className="p-4 flex justify-center items-center bg-mintGreen-400">
+		<div className="p-4 flex justify-center items-center bg-mint-green-400">
 			<h3 className="text-2xl uppercase font-josefin text-white">{title}</h3>
 		</div>
 	);

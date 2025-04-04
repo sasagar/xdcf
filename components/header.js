@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { Icon } from "@iconify/react";
 
 /**
@@ -17,6 +18,7 @@ const Header = () => {
 		const ele = document.getElementById(id);
 		window.scrollTo(0, ele.offsetTop - 130);
 	};
+	const router = useRouter();
 
 	return (
 		<>
@@ -41,7 +43,7 @@ const Header = () => {
 
 						<button
 							type="button"
-							className="flex flex-col h-12 w-12 rounded justify-center items-center group md:hidden"
+							className="flex flex-col h-12 w-12 rounded-sm justify-center items-center group md:hidden"
 							onClick={() => setIsOpen(!isOpen)}
 						>
 							<div
@@ -64,25 +66,23 @@ const Header = () => {
 						</button>
 
 						<nav
-							className={`md:flex gap-8 ${isOpen ? "flex flex-col justify-start h-screen absolute top-24 left-0 bg-white/70 dark:bg-black/70 p-8 w-full backdrop-blur" : "hidden"}`}
+							className={`md:flex gap-8 ${isOpen ? "flex flex-col justify-start h-screen absolute top-24 left-0 bg-white/70 dark:bg-black/70 p-8 w-full backdrop-blur-sm" : "hidden"}`}
 						>
 							<ul className="flex flex-col md:flex-row justify-end items-center gap-8">
 								<li>
 									<button
 										type="button"
-										className="font-din flex flex-col justify-center items-center text-xl uppercase"
-										onClick={() => {
-											isOpen && setIsOpen(!isOpen);
-											scroll("top");
-										}}
+										className="font-din flex flex-col justify-center items-center text-xl uppercase hover:cursor-pointer"
+										onClick={() => router.push("/")}
 									>
-										Top<span className="font-notoSans text-xs">トップ</span>
+										Top
+										<span className="font-notoSans text-xs">トップページ</span>
 									</button>
 								</li>
 								<li>
 									<button
 										type="button"
-										className="font-din flex flex-col justify-center items-center text-xl uppercase"
+										className="font-din flex flex-col justify-center items-center text-xl uppercase hover:cursor-pointer"
 										onClick={() => {
 											isOpen && setIsOpen(!isOpen);
 											scroll("news");
@@ -94,7 +94,7 @@ const Header = () => {
 								<li>
 									<button
 										type="button"
-										className="font-din flex flex-col justify-center items-center text-xl uppercase"
+										className="font-din flex flex-col justify-center items-center text-xl uppercase hover:cursor-pointer"
 										onClick={() => {
 											isOpen && setIsOpen(!isOpen);
 											scroll("schedule");
@@ -107,7 +107,7 @@ const Header = () => {
 								<li>
 									<button
 										type="button"
-										className="font-din flex flex-col justify-center items-center text-xl uppercase"
+										className="font-din flex flex-col justify-center items-center text-xl uppercase hover:cursor-pointer"
 										onClick={() => {
 											isOpen && setIsOpen(!isOpen);
 											scroll("about");
@@ -117,11 +117,21 @@ const Header = () => {
 										<span className="font-notoSans text-xs">イベント概要</span>
 									</button>
 								</li>
+								<li>
+									<button
+										type="button"
+										className="font-din flex flex-col justify-center items-center text-xl uppercase hover:cursor-pointer"
+										onClick={() => router.push("/archives")}
+									>
+										Archives
+										<span className="font-notoSans text-xs">過去開催</span>
+									</button>
+								</li>
 							</ul>
 							<a
-								href="https://xdufes.connpass.com/event/336906/"
+								href="https://xdufes.connpass.com/event/350143/"
 								target="_blank"
-								className="flex items-center justify-center gap-2 rounded-full bg-foreground px-10 py-2 bg-mintGreen-400 text-white hover:text-mintGreen-400 hover:bg-white transition-all text-center md:text-left"
+								className="link-btn"
 								rel="noreferrer"
 							>
 								無料で参加する

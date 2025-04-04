@@ -1,6 +1,6 @@
 {
-  "name": "xdug2024",
-  "version": "0.1.0",
+  "name": "xdcf",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbo",
@@ -17,7 +17,8 @@
     "@biomejs/biome": "^1.9.4",
     "@iconify-json/basil": "^1.2.1",
     "@iconify/react": "^5.0.2",
+    "@tailwindcss/postcss": "^4.1.1",
     "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.14"
+    "tailwindcss": "^4.1.1"
   }
 }

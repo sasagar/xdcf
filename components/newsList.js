@@ -10,8 +10,21 @@ const NewsList = () => {
 		<MainFlex title="News" idName="news" className="md:mb-20">
 			<ul className="news-list flex flex-col divide-y divide-gray-300 divide-dashed">
 				<li className="news-item py-4">
-					<span className="news-link flex flex-col md:flex-row items-baseline rounded">
-						<time className="text-base font-dinNarrow w-36">2024.11.15</time>
+					<a
+						href="https://blog.adobe.com/jp/publish/2025/01/15/cc-web-x-designers-career-fes"
+						target="_blank"
+						className="news-link flex flex-col md:flex-row items-baseline rounded-sm"
+						rel="noopener noreferrer"
+					>
+						<time className="text-base font-din-narrow w-36">2025.01.15</time>
+						<p className="text-base font-notoSans flex-1">
+							XXDCF2024開催しました！レポートはこちら 【Adobeブログへのリンク】
+						</p>
+					</a>
+				</li>
+				<li className="news-item py-4">
+					<span className="news-link flex flex-col md:flex-row items-baseline rounded-sm">
+						<time className="text-base font-din-narrow w-36">2024.11.15</time>
 						<p className="text-base font-notoSans flex-1">
 							公式サイトを公開しました！
 						</p>
@@ -21,10 +34,10 @@ const NewsList = () => {
 					<a
 						href="https://x.com/xdcfjp"
 						target="_blank"
-						className="news-link flex flex-col md:flex-row items-baseline rounded"
+						className="news-link flex flex-col md:flex-row items-baseline rounded-sm"
 						rel="noopener noreferrer"
 					>
-						<time className="text-base font-dinNarrow w-36">2024.10.18</time>
+						<time className="text-base font-din-narrow w-36">2024.10.18</time>
 						<p className="text-base font-notoSans flex-1">
 							Xの公式アカウントを公開しました。
 						</p>

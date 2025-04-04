@@ -9,7 +9,17 @@ import { Icon } from "@iconify/react";
  *
  * @return {JSX.Element} The JSX element representing the About component.
  */
-const About = () => {
+const About = ({
+	link,
+	year,
+	month,
+	day,
+	weekday,
+	openHour,
+	openMinute,
+	startHour,
+	startMinute,
+}) => {
 	return (
 		<>
 			<div id="about" className="max-w-5xl mx-auto mt-10 md:mt-20">
@@ -19,10 +29,10 @@ const About = () => {
 				<div className="mt-0 md:mt-8 mb-4 md:mb-8">
 					<div className="mb-2">無料</div>
 					<a
-						href="https://xdufes.connpass.com/event/336906/"
+						href={link}
 						target="_blank"
 						rel="noopener noreferrer"
-						className="flex items-center justify-center gap-2 w-full md:w-fit text-center uppercase font-josefin border rounded-full px-14 py-3 text-white bg-mintGreen-400 border-background hover:bg-mintGreen-100 hover:text-mintGreen-400 transition-all hover:no-underline"
+						className="link-btn"
 					>
 						参加する <Icon icon={"basil:share-box-outline"} />
 					</a>
@@ -35,9 +45,9 @@ const About = () => {
 			>
 				<div className="mt-0 md:mt-8 mb-4 md:mb-8 border-b border-dashed border-gray-300">
 					<div className="text-2xl">
-						<time dateTime="2024-12-15">
-							2024年<span className="text-4xl">12</span>月
-							<span className="text-4xl">15</span>日 (日)
+						<time dateTime={`${year}-${month}-${day}`}>
+							{year}年<span className="text-4xl">{month}</span>月
+							<span className="text-4xl">{day}</span>日 ({weekday})
 						</time>
 					</div>
 				</div>
@@ -46,16 +56,20 @@ const About = () => {
 						<div className="flex gap-3">
 							<dt className="text-sm">開場時間</dt>
 							<dd className="text-4xl">
-								<time dateTime="13:00">
-									13<span className="text-2xl">:</span>00
+								<time dateTime={`${openHour}:${openMinute}`}>
+									{openHour}
+									<span className="text-2xl">:</span>
+									{openMinute}
 								</time>
 							</dd>
 						</div>
 						<div className="flex gap-3">
 							<dt className="text-sm">開演時間</dt>
 							<dd className="text-4xl">
-								<time dateTime="13:30">
-									13<span className="text-2xl">:</span>30
+								<time dateTime={`${startHour}:${startMinute}`}>
+									{startHour}
+									<span className="text-2xl">:</span>
+									{startMinute}
 								</time>
 							</dd>
 						</div>
@@ -78,7 +92,7 @@ const About = () => {
 							href="https://www.adobe.com/jp/information/company/map.html"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="flex items-center justify-center gap-2 text-center px-12 py-3 border border-gray-300 hover:bg-mintGreen-400 hover:border-mintGreen-400 rounded-full text-foreground hover:text-white hover:no-underline transition-all"
+							className="flex items-center justify-center gap-2 text-center px-12 py-3 border border-gray-300 hover:bg-mint-green-400 hover:border-mint-green-400 rounded-full text-foreground hover:text-white hover:no-underline transition-all"
 						>
 							会場の詳細はこちら
 							<Icon icon={"basil:share-box-outline"} />
@@ -87,7 +101,7 @@ const About = () => {
 							href="https://maps.app.goo.gl/DZBJc2nNyR36EQ1r8"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="flex items-center justify-center gap-2 text-center px-12 py-3 border border-gray-300 hover:bg-mintGreen-400 hover:border-mintGreen-400 rounded-full text-foreground hover:text-white hover:no-underline transition-all"
+							className="flex items-center justify-center gap-2 text-center px-12 py-3 border border-gray-300 hover:bg-mint-green-400 hover:border-mint-green-400 rounded-full text-foreground hover:text-white hover:no-underline transition-all"
 						>
 							Googleマップで見る
 							<Icon icon={"basil:share-box-outline"} />
@@ -145,7 +159,7 @@ const About = () => {
 					</ul>
 					{/* <a
 						href="#top"
-						className="inline-block uppercase font-josefin border rounded-full px-14 py-3 text-white bg-mintGreen-400 border-background hover:bg-mintGreen-400 hover:text-mingreen-400 transition-all hover:no-underline"
+						className="inline-block uppercase font-josefin border rounded-full px-14 py-3 text-white bg-mint-green-400 border-background hover:bg-mint-green-400 hover:text-mingreen-400 transition-all hover:no-underline"
 					>
 						スタッフにエントリーする
 					</a> */}
@@ -164,7 +178,7 @@ const About = () => {
 					</ul>
 					<a
 						href="#top"
-						className="inline-block uppercase font-josefin border rounded-full px-14 py-3 text-white bg-mintGreen-400 border-background hover:bg-mintGreen-400 hover:text-mingreen-400 transition-all hover:no-underline"
+						className="inline-block uppercase font-josefin border rounded-full px-14 py-3 text-white bg-mint-green-400 border-background hover:bg-mint-green-400 hover:text-mingreen-400 transition-all hover:no-underline"
 					>
 						登壇者にエントリーする
 					</a>
