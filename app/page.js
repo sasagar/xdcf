@@ -67,7 +67,7 @@ export default function Home() {
 			<section>
 				<About
 					link="https://xdufes.connpass.com/event/350143/"
-					year="2024"
+					year="2025"
 					month="04"
 					day="19"
 					weekday="土"
