@@ -68,7 +68,7 @@ export default function Home() {
 			</section>
 			<section>
 				<About
-					link="https://xdufes.connpass.com/event/350143/"
+					link="https://xdufes.connpass.com/event/353154/"
 					year="2025"
 					month="07"
 					day="06"
