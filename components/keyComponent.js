@@ -29,7 +29,7 @@ const KeyComponent = ({ date, link }) => {
 								</span>
 							</a>
 						</div>
-						<div className="ticket-stub w-4 md:w-16 border-l border-foreground border-dashed" />
+						<div className="ticket-stub w-4 md:w-16 border-l border-bakcground border-dashed" />
 					</div>
 					<div className="ticket w-1/2 bg-sand-400 flex">
 						<div className="ticket-inner flex-1 flex flex-col justify-center items-center">
@@ -47,7 +47,7 @@ const KeyComponent = ({ date, link }) => {
 								<span className="text-base md:text-3xl">無料で参加する</span> */}
 							</a>
 						</div>
-						<div className="ticket-stub w-4 md:w-16 border-l border-foreground border-dashed" />
+						<div className="ticket-stub w-4 md:w-16 border-l border-background border-dashed" />
 					</div>
 				</div>
 				<div className="w-full text-center font-din-narrow font-semibold leading-none my-5">
@@ -68,11 +68,11 @@ const KeyComponent = ({ date, link }) => {
 				<div className="w-full flex">
 					<div className="ticket w-1/2 bg-mint-green-400 flex h-10">
 						<div className="ticket-inner flex-1 flex flex-col justify-center items-center" />
-						<div className="ticket-stub w-4 md:w-16 border-l border-foreground border-dashed" />
+						<div className="ticket-stub w-4 md:w-16 border-l border-background border-dashed" />
 					</div>
 					<div className="ticket w-1/2 bg-sand-400 flex h-10">
 						<div className="ticket-inner flex-1 flex flex-col justify-center items-center" />
-						<div className="ticket-stub w-4 md:w-16 border-l border-foreground border-dashed" />
+						<div className="ticket-stub w-4 md:w-16 border-l border-background border-dashed" />
 					</div>
 				</div>
 			</div>

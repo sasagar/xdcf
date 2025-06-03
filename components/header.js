@@ -43,7 +43,7 @@ const Header = () => {
 
 						<button
 							type="button"
-							className="flex flex-col h-12 w-12 rounded-sm justify-center items-center group md:hidden"
+							className="flex flex-col h-12 w-12 rounded-sm justify-center items-center group lg:hidden"
 							onClick={() => setIsOpen(!isOpen)}
 						>
 							<div
@@ -66,7 +66,7 @@ const Header = () => {
 						</button>
 
 						<nav
-							className={`md:flex gap-8 ${isOpen ? "flex flex-col justify-start h-screen absolute top-24 left-0 bg-white/70 dark:bg-black/70 p-8 w-full backdrop-blur-sm" : "hidden"}`}
+							className={`lg:flex gap-8 ${isOpen ? "flex flex-col justify-start h-screen absolute top-24 left-0 bg-white/70 dark:bg-black/70 p-8 w-full backdrop-blur-sm" : "hidden"}`}
 						>
 							<ul className="flex flex-col md:flex-row justify-end items-center gap-8">
 								<li>

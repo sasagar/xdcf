@@ -1,15 +1,15 @@
 import Casts from "@/components/casts";
 import KeyComponent from "@/components/keyComponent";
 import NewsList from "@/components/newsList";
-import Schedule from "../components/schedule";
+import Schedule from "./components/schedule";
 import SectionTitle from "@/components/sectionTitle";
 import About from "@/components/about";
 import Sponsor from "@/components/sponsor";
 
 export const metadata = {
-	title: "X Designers Career Fes",
+	title: "X Designers Career Fes #2",
 	description:
-		"2025年7月6日開催！ X Designers Career Fes（クロス・デザイナーズ・キャリア・フェス）公式サイト",
+		"2025年4月19日開催！ 第2回 X Designers Career Fes",
 };
 
 /**
@@ -26,8 +26,8 @@ export default function Home() {
 	return (
 		<div className="">
 			<KeyComponent
-				date="2025.07.06 sun"
-				link="https://xdufes.connpass.com/event/353154/"
+				date="2025.04.19 sat"
+				link="https://xdufes.connpass.com/event/350143/"
 			/>
 			<NewsList />
 			<section>
@@ -45,24 +45,7 @@ export default function Home() {
 				</article>
 			</section>
 			<section className="mt-20">
-				<SectionTitle title="Theme" />
-				<article>
-					<p className="max-w-5xl mx-auto mt-10 font-bold text-xl">
-						自分が目指すキャリアは？
-						<br />
-						目指すキャリアを実現するためには、どんな学びが必要？
-						その学びはどこで得られる？
-					</p>
-				</article>
-			</section>
-			<section className="mt-20">
 				<SectionTitle title="Contents" />
-				<article className="max-w-5xl mx-auto mt-10">
-					<p className="leading-relaxed">
-						今回は、自分の“これから”のキャリアに焦点を当て、「目指すキャリア像」から逆算して
-						<strong>必要なスキルを洗い出す回</strong>です。
-					</p>
-				</article>
 				<Schedule />
 				<Casts />
 			</section>
@@ -70,9 +53,9 @@ export default function Home() {
 				<About
 					link="https://xdufes.connpass.com/event/350143/"
 					year="2024"
-					month="07"
-					day="06"
-					weekday="日"
+					month="04"
+					day="19"
+					weekday="土"
 					openHour="13"
 					openMinute="00"
 					startHour="13"
