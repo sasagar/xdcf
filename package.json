@@ -1,24 +1,24 @@
 {
-  "name": "xdcf",
-  "version": "2.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev --turbo",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "15.0.3",
-    "react": "19.0.0-rc-5c56b873-20241107",
-    "react-dom": "19.0.0-rc-5c56b873-20241107"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
-    "@iconify-json/basil": "^1.2.1",
-    "@iconify/react": "^5.0.2",
-    "@tailwindcss/postcss": "^4.1.1",
-    "postcss": "^8.4.47",
-    "tailwindcss": "^4.1.1"
-  }
+	"name": "xdcf",
+	"version": "3.0.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev --turbo",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"next": "15.0.3",
+		"react": "19.0.0-rc-5c56b873-20241107",
+		"react-dom": "19.0.0-rc-5c56b873-20241107"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@iconify-json/basil": "^1.2.1",
+		"@iconify/react": "^5.0.2",
+		"@tailwindcss/postcss": "^4.1.1",
+		"postcss": "^8.4.47",
+		"tailwindcss": "^4.1.1"
+	}
 }
