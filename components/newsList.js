@@ -18,7 +18,7 @@ const NewsList = () => {
 					>
 						<time className="text-base font-din-narrow w-36">2025.01.15</time>
 						<p className="text-base font-notoSans flex-1">
-							XXDCF2024開催しました！レポートはこちら 【Adobeブログへのリンク】
+							XDCF2024開催しました！レポートはこちら 【Adobeブログへのリンク】
 						</p>
 					</a>
 				</li>
