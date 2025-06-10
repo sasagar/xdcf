@@ -1,5 +1,5 @@
-import MainFlex from "./mainFlex";
-import SubSectionTitle from "./subSectionTitle";
+import MainFlex from "@/components/mainFlex";
+import SubSectionTitle from "@/components/subSectionTitle";
 
 const Schedule = () => {
 	return (
