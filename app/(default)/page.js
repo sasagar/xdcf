@@ -1,9 +1,9 @@
+import About from "@/components/about";
 import Casts from "@/components/casts";
 import KeyComponent from "@/components/keyComponent";
 import NewsList from "@/components/newsList";
 import Schedule from "@/components/schedule";
 import SectionTitle from "@/components/sectionTitle";
-import About from "@/components/about";
 import Sponsor from "@/components/sponsor";
 
 export const metadata = {

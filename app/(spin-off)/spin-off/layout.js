@@ -1,9 +1,8 @@
 // import localFont from "next/font/local";
 import "./spinoff.css";
 import AdobeFontLoader from "@/components/adobeFontLoader";
-
-import Header from "@/components/header";
 import Footer from "@/components/footer";
+import Header from "@/components/header";
 import Loading from "@/components/loading";
 
 /**
