@@ -23,12 +23,11 @@ export const metadata = {
  * @return {JSX.Element} The JSX element representing the Home page.
  */
 export default function Home() {
+	const link = "https://xdufes.connpass.com/event/353154/";
+
 	return (
 		<div className="">
-			<KeyComponent
-				date="2025.07.06 sun"
-				link="https://xdufes.connpass.com/event/353154/"
-			/>
+			<KeyComponent date="2025.07.06 sun" link={link} />
 			<NewsList />
 			<section>
 				<SectionTitle title="Concept" />
@@ -68,7 +67,7 @@ export default function Home() {
 			</section>
 			<section>
 				<About
-					link="https://xdufes.connpass.com/event/353154/"
+					link={link}
 					year="2025"
 					month="07"
 					day="06"

@@ -1,23 +1,23 @@
 "use client";
 
-import Image from "next/image";
-import { useState } from "react";
-import { useRouter } from "next/navigation";
 import { Icon } from "@iconify/react";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 /**
  * The header component for the X Designers Career Fes website.
  *
  * @return {JSX.Element} The JSX element representing the Header component.
  */
-const Header = () => {
+const Header = ({ link }) => {
 	const [isOpen, setIsOpen] = useState(false);
 	const genericHamburgerLine =
 		"h-1 w-8 my-1 rounded-full bg-foreground transition ease transform duration-300";
-	const scroll = (id) => {
-		const ele = document.getElementById(id);
-		window.scrollTo(0, ele.offsetTop - 130);
-	};
+	// const scroll = (id) => {
+	// 	const ele = document.getElementById(id);
+	// 	window.scrollTo(0, ele.offsetTop - 130);
+	// };
 	const router = useRouter();
 
 	return (
@@ -66,7 +66,7 @@ const Header = () => {
 						</button>
 
 						<nav
-							className={`lg:flex gap-8 ${isOpen ? "flex flex-col justify-start h-screen absolute top-24 left-0 bg-white/70 dark:bg-black/70 p-8 w-full backdrop-blur-sm" : "hidden"}`}
+							className={`lg:flex gap-8 ${isOpen ? "flex flex-col justify-start h-screen absolute top-24 left-0 bg-background/70 p-8 w-full backdrop-blur-sm" : "hidden"}`}
 						>
 							<ul className="flex flex-col md:flex-row justify-end items-center gap-8">
 								<li>
@@ -83,15 +83,26 @@ const Header = () => {
 									<button
 										type="button"
 										className="font-din flex flex-col justify-center items-center text-xl uppercase hover:cursor-pointer"
-										onClick={() => {
-											isOpen && setIsOpen(!isOpen);
-											scroll("news");
-										}}
+										// onClick={() => {
+										// 	isOpen && setIsOpen(!isOpen);
+										// 	scroll("news");
+										// }}
+										onClick={() => router.push("/#news")}
 									>
 										News<span className="font-notoSans text-xs">最新情報</span>
 									</button>
 								</li>
 								<li>
+									<button
+										type="button"
+										className="font-din flex flex-col justify-center items-center text-xl uppercase hover:cursor-pointer"
+										onClick={() => router.push("/spin-off")}
+									>
+										Spin-Off
+										<span className="font-notoSans text-xs">スピンオフ</span>
+									</button>
+								</li>
+								{/* <li>
 									<button
 										type="button"
 										className="font-din flex flex-col justify-center items-center text-xl uppercase hover:cursor-pointer"
@@ -103,18 +114,25 @@ const Header = () => {
 										Schedule
 										<span className="font-notoSans text-xs">スケジュール</span>
 									</button>
+								</li> */}
+								<li>
+									<button
+										type="button"
+										className="font-din flex flex-col justify-center items-center text-xl uppercase hover:cursor-pointer"
+										onClick={() => router.push("/discord")}
+									>
+										Discord
+										<span className="font-notoSans text-xs">Discord</span>
+									</button>
 								</li>
 								<li>
 									<button
 										type="button"
 										className="font-din flex flex-col justify-center items-center text-xl uppercase hover:cursor-pointer"
-										onClick={() => {
-											isOpen && setIsOpen(!isOpen);
-											scroll("about");
-										}}
+										onClick={() => router.push("/coc")}
 									>
-										About
-										<span className="font-notoSans text-xs">イベント概要</span>
+										CoC
+										<span className="font-notoSans text-xs">行動規範</span>
 									</button>
 								</li>
 								<li>
@@ -129,7 +147,7 @@ const Header = () => {
 								</li>
 							</ul>
 							<a
-								href="https://xdufes.connpass.com/event/350143/"
+								href={link}
 								target="_blank"
 								className="link-btn"
 								rel="noreferrer"

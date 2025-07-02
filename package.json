@@ -9,16 +9,19 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
-		"next": "15.0.3",
+		"next": "15.3.4",
 		"react": "19.0.0-rc-5c56b873-20241107",
 		"react-dom": "19.0.0-rc-5c56b873-20241107"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^1.9.4",
+		"@biomejs/biome": "^2.0.0",
 		"@iconify-json/basil": "^1.2.1",
 		"@iconify/react": "^5.0.2",
 		"@tailwindcss/postcss": "^4.1.1",
+		"@types/node": "24.0.1",
+		"@types/react": "19.1.8",
 		"postcss": "^8.4.47",
-		"tailwindcss": "^4.1.1"
+		"tailwindcss": "^4.1.1",
+		"typescript": "5.8.3"
 	}
 }

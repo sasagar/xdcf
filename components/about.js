@@ -1,6 +1,6 @@
-import SubSectionTitle from "./subSectionTitle";
-import MainFlex from "./mainFlex";
 import { Icon } from "@iconify/react";
+import MainFlex from "./mainFlex";
+import SubSectionTitle from "./subSectionTitle";
 
 /**
  * The About component for the X Designers Career Fes website.
@@ -142,7 +142,7 @@ const About = ({
 				className="border-b border-dashed border-gray-300"
 			>
 				<div className="pt-0 md:pt-4 py-4">
-					<ul className="list-disc list-outside ms-5 mb-5">
+					<ul className="list-disc list-outside ms-5">
 						<li>
 							このイベントは<a href="/coc">コミュニティ行動規範</a>
 							に基づいて活動しています。

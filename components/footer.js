@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 /**
  * The footer component for the X Designers Career Fes website.
@@ -9,7 +10,7 @@ const Footer = () => {
 	return (
 		<footer className="w-full bg-foreground text-background py-8 text-center mt-24">
 			<h4 className="font-josefin text-3xl text-center mx-auto w-fit">
-				<a
+				<Link
 					href="/"
 					className="flex gap-4 items-center text-background hover:no-underline"
 				>
@@ -21,16 +22,17 @@ const Footer = () => {
 						className="rounded-full"
 					/>
 					XDCF
-				</a>
+				</Link>
 			</h4>
 			<h5 className="font-josefin text-lg mt-3">
-				<a href="/" className="text-background hover:no-underline">
+				<Link href="/" className="text-background hover:no-underline">
 					CROSS DESIGNERS CAREER FES
-				</a>
+				</Link>
 			</h5>
 			<section className="flex justify-center gap-4 mt-8 text-sm">
-				<a href="/coc">行動規範</a> |{" "}
-				<a href="/privacy-policy">プライバシーポリシー</a>
+				<Link href="/coc">行動規範</Link> |{" "}
+				<Link href="/discord">Discordサーバー利用規約</Link> |{" "}
+				<Link href="/privacy-policy">プライバシーポリシー</Link>
 			</section>
 			<small className="block font-din mt-8 text-xs">
 				&copy; 2024 XDCF. All rights reserved.

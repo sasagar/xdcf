@@ -20,13 +20,14 @@ import Loading from "@/components/loading";
  * @returns {JSX.Element}
  */
 export default function RootLayout({ children }) {
+	const link = "https://xdufes.connpass.com/event/353154/";
 	return (
 		<html lang="ja">
 			<AdobeFontLoader />
 			<body className="font-notoSans">
 				<Loading />
 				<div id="container">
-					<Header />
+					<Header link={link} />
 					{children}
 					<Footer />
 				</div>
