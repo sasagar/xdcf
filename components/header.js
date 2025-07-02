@@ -96,7 +96,7 @@ const Header = ({ link }) => {
 									<button
 										type="button"
 										className="font-din flex flex-col justify-center items-center text-xl uppercase hover:cursor-pointer"
-										onClick={() => router.push("/spinoff")}
+										onClick={() => router.push("/spinoff/01")}
 									>
 										Spin-Off
 										<span className="font-notoSans text-xs">スピンオフ</span>
