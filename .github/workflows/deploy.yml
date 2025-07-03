@@ -33,7 +33,7 @@ jobs:
         env:
           NEXT_PUBLIC_ADOBE_FONTS_KIT_ID: ${{ secrets.NEXT_PUBLIC_ADOBE_FONTS_KIT_ID }}
         run: pnpm run build
-
+        
       - name: FTP Deploy
         # FTPデプロイできるアクションがあるので、それを利用する
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -49,5 +49,5 @@ jobs:
           local-dir: ./out/
           # さくらのレンタルサーバー上の、デプロイしたいディレクトリ
           # 例: /home/username/www/dev/
-          server-dir: /home/${{ secrets.FTP_USERNAME }}/www/${{ secrets.FTP_DEPLOY_DIR }}/
+          server-dir: home/${{ secrets.FTP_USERNAME }}/www/${{ secrets.FTP_DEPLOY_DIR }}/
           protocol: ftps
