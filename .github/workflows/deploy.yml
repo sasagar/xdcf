@@ -33,21 +33,31 @@ jobs:
         env:
           NEXT_PUBLIC_ADOBE_FONTS_KIT_ID: ${{ secrets.NEXT_PUBLIC_ADOBE_FONTS_KIT_ID }}
         run: pnpm run build
-        
-      - name: FTP Deploy
-        # FTPデプロイできるアクションがあるので、それを利用する
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        # FTP接続に必要な環境変数を設定する
+      
+      - name: SFTP upload
+        uses: Dylan700/sftp-upload-action@latest
         with:
-          # 例： username.sakura.ne.jp
-          server: ${{ secrets.FTP_SERVER }}
-          # 例： username
-          username: ${{ secrets.FTP_USERNAME }}
-          # FTPパスワード(sshログインするときとかに使うやつ)
-          password: ${{ secrets.FTP_PASSWORD }}
-          # yarn buildによって生成される静的ファイルのディレクトリ
-          local-dir: ./out/
-          # さくらのレンタルサーバー上の、デプロイしたいディレクトリ
-          # 例: /home/username/www/dev/
-          server-dir: home/${{ secrets.FTP_USERNAME }}/www/${{ secrets.FTP_DEPLOY_DIR }}/
-          protocol: ftps
+          server: ${{secrets.FTP_SERVER}}
+          username: ${{secrets.FTP_USERNAME}}
+          password: ${{secrets.FTP_PASSWORD}}
+          port: 22
+          uploads: |
+            ./out/ => /home/${{ secrets.FTP_USERNAME }}/www/${{ secrets.FTP_DEPLOY_DIR }}/
+
+      # - name: FTP Deploy
+      #   # FTPデプロイできるアクションがあるので、それを利用する
+      #   uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      #   # FTP接続に必要な環境変数を設定する
+      #   with:
+      #     # 例： username.sakura.ne.jp
+      #     server: ${{ secrets.FTP_SERVER }}
+      #     # 例： username
+      #     username: ${{ secrets.FTP_USERNAME }}
+      #     # FTPパスワード(sshログインするときとかに使うやつ)
+      #     password: ${{ secrets.FTP_PASSWORD }}
+      #     # yarn buildによって生成される静的ファイルのディレクトリ
+      #     local-dir: ./out/
+      #     # さくらのレンタルサーバー上の、デプロイしたいディレクトリ
+      #     # 例: /home/username/www/dev/
+      #     server-dir: home/${{ secrets.FTP_USERNAME }}/www/${{ secrets.FTP_DEPLOY_DIR }}/
+      #     protocol: ftps
