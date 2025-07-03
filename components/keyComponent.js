@@ -1,12 +1,12 @@
+import LimitedLinkButton from "./limitedLinkButton";
 import MainTitle from "./mainTitle";
-import { Icon } from "@iconify/react";
 
 /**
  * Renders the KeyComponent section with detailed information about different career paths.
  *
  * @return {JSX.Element} The KeyComponent section JSX
  */
-const KeyComponent = ({ date, link }) => {
+const KeyComponent = ({ date, link, openAt, closeAt, closedText }) => {
 	return (
 		<section className="keyComponent max-w-7xl mx-auto">
 			<h2 className="text-sm md:text-3xl text-center">
@@ -55,15 +55,14 @@ const KeyComponent = ({ date, link }) => {
 						{date}
 					</time>
 					<div className="relative w-5 h-4 after:border-x-[18px] after:border-t-[15px] after:border-transparent after:border-t-sand-400 after:absolute after:top-0 my-3 mx-auto -left-5" />
-					<a
+					<LimitedLinkButton
 						href={link}
-						target="_blank"
-						className="mx-auto link-btn"
-						rel="noreferrer"
+						openAt={openAt}
+						closeAt={closeAt}
+						closedText={closedText}
 					>
 						無料で参加する
-						<Icon icon={"basil:share-box-outline"} />
-					</a>
+					</LimitedLinkButton>
 				</div>
 				<div className="w-full flex">
 					<div className="ticket w-1/2 bg-mint-green-400 flex h-10">

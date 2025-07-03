@@ -1,16 +1,23 @@
 "use client";
 
-import { Icon } from "@iconify/react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import LimitedLinkButton from "./limitedLinkButton";
 
 /**
  * The header component for the X Designers Career Fes website.
  *
  * @return {JSX.Element} The JSX element representing the Header component.
  */
-const Header = ({ link }) => {
+const Header = ({
+	link,
+	openAt,
+	closeAt,
+	spinoffLink,
+	spinoffOpenAt,
+	spinoffCloseAt,
+}) => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const genericHamburgerLine =
 		"h-1 w-8 my-1 rounded-full bg-foreground transition ease transform duration-300";
@@ -102,7 +109,29 @@ const Header = ({ link }) => {
 									</li>
 								))}
 							</ul>
-							<a
+							{spinoffLink ? (
+								<LimitedLinkButton
+									href={spinoffLink}
+									className="link-btn"
+									openAt={spinoffOpenAt}
+									closeAt={spinoffCloseAt}
+									hidden={true}
+								>
+									スピンオフに参加する
+								</LimitedLinkButton>
+							) : null}
+							{link ? (
+								<LimitedLinkButton
+									href={link}
+									className="link-btn"
+									openAt={openAt}
+									closeAt={closeAt}
+									hidden={true}
+								>
+									無料で参加する
+								</LimitedLinkButton>
+							) : null}
+							{/* <a
 								href={link}
 								target="_blank"
 								className="link-btn"
@@ -110,7 +139,7 @@ const Header = ({ link }) => {
 							>
 								無料で参加する
 								<Icon icon={"basil:share-box-outline"} />
-							</a>
+							</a> */}
 						</nav>
 					</header>
 				</div>

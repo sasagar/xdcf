@@ -24,10 +24,18 @@ export const metadata = {
  */
 export default function Home() {
 	const link = "https://xdufes.connpass.com/event/353154/";
+	const openAt = new Date("2025-06-01T00:00:00+09:00");
+	const closeAt = new Date("2025-06-30T15:00:00+09:00");
 
 	return (
 		<div className="">
-			<KeyComponent date="2025.07.06 sun" link={link} />
+			<KeyComponent
+				date="2025.07.06 sun"
+				link={link}
+				openAt={openAt}
+				closeAt={closeAt}
+				closedText="参加受付は終了しました"
+			/>
 			<NewsList />
 			<section>
 				<SectionTitle title="Concept" />

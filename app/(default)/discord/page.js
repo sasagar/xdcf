@@ -11,7 +11,7 @@ const Discord = () => {
 	return (
 		<div id="discord" className="">
 			<section>
-				<SectionTitleLong title="XDCF Discord Server" />
+				<SectionTitleLong title="XDCF Discord" />
 				<article className="max-w-5xl mx-auto mt-10 px-4 md:px-0">
 					<h2 className="text-3xl font-bold">XDCF Discordサーバーについて</h2>
 					<p className="leading-relaxed mt-6">

@@ -1,10 +1,10 @@
+import About from "@/components/about";
 import Casts from "@/components/casts";
 import KeyComponent from "@/components/keyComponent";
 import NewsList from "@/components/newsList";
-import Schedule from "./components/schedule";
 import SectionTitle from "@/components/sectionTitle";
-import About from "@/components/about";
 import Sponsor from "@/components/sponsor";
+import Schedule from "./components/schedule";
 
 export const metadata = {
 	title: "X Designers Career Fes #1",
@@ -27,6 +27,9 @@ export default function Home() {
 			<KeyComponent
 				date="2024.12.15 sun"
 				link="https://xdufes.connpass.com/event/336906/"
+				openAt={new Date("2024-12-15T00:00:00+09:00")}
+				closeAt={new Date("2024-12-15T15:00:00+09:00")}
+				closedText="参加受付は終了しました"
 			/>
 			<NewsList />
 			<section>

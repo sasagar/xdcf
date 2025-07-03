@@ -1,15 +1,14 @@
+import About from "@/components/about";
 import Casts from "@/components/casts";
 import KeyComponent from "@/components/keyComponent";
 import NewsList from "@/components/newsList";
-import Schedule from "./components/schedule";
 import SectionTitle from "@/components/sectionTitle";
-import About from "@/components/about";
 import Sponsor from "@/components/sponsor";
+import Schedule from "./components/schedule";
 
 export const metadata = {
 	title: "X Designers Career Fes #2",
-	description:
-		"2025年4月19日開催！ 第2回 X Designers Career Fes",
+	description: "2025年4月19日開催！ 第2回 X Designers Career Fes",
 };
 
 /**
@@ -28,6 +27,9 @@ export default function Home() {
 			<KeyComponent
 				date="2025.04.19 sat"
 				link="https://xdufes.connpass.com/event/350143/"
+				openAt={new Date("2025-04-19T00:00:00+09:00")}
+				closeAt={new Date("2025-04-19T15:00:00+09:00")}
+				closedText="参加受付は終了しました"
 			/>
 			<NewsList />
 			<section>

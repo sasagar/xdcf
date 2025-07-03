@@ -19,13 +19,20 @@ import Loading from "@/components/loading";
  * @returns {JSX.Element}
  */
 export default function RootLayout({ children }) {
+	const link = "https://xdufes.connpass.com/event/358951/";
+	const openAt = new Date("2025-07-03T00:00:00+09:00");
+	const closeAt = new Date("2025-07-28T13:00:00+09:00");
 	return (
 		<html lang="ja">
 			<AdobeFontLoader />
 			<body className="font-notoSans">
 				<Loading />
 				<div id="container">
-					<Header link="https://connpass.com/event/358951/" />
+					<Header
+						spinoffLink={link}
+						spinoffOpenAt={openAt}
+						spinoffCloseAt={closeAt}
+					/>
 					{children}
 					<Footer />
 				</div>
