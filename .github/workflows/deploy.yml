@@ -43,6 +43,7 @@ jobs:
           port: 22
           uploads: |
             ./out/ => /home/${{ secrets.FTP_USERNAME }}/www/${{ secrets.FTP_DEPLOY_DIR }}/
+          delete: true
 
       # - name: FTP Deploy
       #   # FTPデプロイできるアクションがあるので、それを利用する
