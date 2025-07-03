@@ -10,6 +10,38 @@ export const metadata = {
 	title: "AI×デザイナーのキャリアと未来 | X Designers Career Fes",
 	description:
 		"2025年8月2日開催！ X Designers Career Fes（クロス・デザイナーズ・キャリア・フェス）スピンオフイベント",
+	icons: {
+		icon: "/logo.png",
+	},
+	openGraph: {
+		type: "website",
+		title: "AI×デザイナーのキャリアと未来",
+		description:
+			"2025年8月2日開催！ X Designers Career Fes（クロス・デザイナーズ・キャリア・フェス）スピンオフイベント",
+		siteName: "X Designers Career Fes",
+		url: "https://xdcf.jp/spin-off/01",
+		images: {
+			url: "https://xdcf.jp/spin-off/01/kv_01.png",
+			width: 2640,
+			height: 1080,
+			alt: "AI×デザイナーのキャリアと未来 | 2025年8月2日開催！ X Designers Career Fes（クロス・デザイナーズ・キャリア・フェス）スピンオフイベント",
+		},
+	},
+	twitter: {
+		type: "website",
+		title: "AI×デザイナーのキャリアと未来",
+		description:
+			"2025年8月2日開催！ X Designers Career Fes（クロス・デザイナーズ・キャリア・フェス）スピンオフイベント",
+		siteName: "X Designers Career Fes",
+		url: "https://xdcf.jp/spin-off/01",
+		images: {
+			url: "https://xdcf.jp/spin-off/01/kv_01.png",
+			width: 2640,
+			height: 1080,
+			alt: "AI×デザイナーのキャリアと未来 | 2025年8月2日開催！ X Designers Career Fes（クロス・デザイナーズ・キャリア・フェス）スピンオフイベント",
+		},
+		card: "summary",
+	},
 };
 
 const So01Page = () => {

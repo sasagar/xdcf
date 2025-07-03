@@ -34,7 +34,7 @@ const Casts = () => {
 					<Cast
 						title="Character designer / Illustrator"
 						name="北沢 直樹"
-						img="/spinoff/01/prof_kitazawa.png"
+						img="/spin-off/01/prof_kitazawa.png"
 						x="3000"
 						y="3000"
 					>
@@ -78,7 +78,7 @@ const Casts = () => {
 					<Cast
 						title="Setsunacreation LLC CEO / AICU Japan CxO"
 						name="藤吉 香帆"
-						img="/spinoff/01/kahofujiyoshi-prof.jpg"
+						img="/spin-off/01/kahofujiyoshi-prof.jpg"
 						x="1856"
 						y="1856"
 					>
@@ -90,7 +90,7 @@ const Casts = () => {
 					<Cast
 						title="Art Director／Designer"
 						name="コネクリ"
-						img="/spinoff/01/conecre.png"
+						img="/spin-off/01/conecre.png"
 						x="640"
 						y="640"
 					>

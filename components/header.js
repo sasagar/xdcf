@@ -18,7 +18,7 @@ const Header = ({ link }) => {
 	const navItems = [
 		{ href: "/", label: "Top", subLabel: "トップページ" },
 		{ href: "/#news", label: "News", subLabel: "最新情報" },
-		{ href: "/spinoff/01", label: "Spin-Off", subLabel: "スピンオフ" },
+		{ href: "/spin-off", label: "Spin-Off", subLabel: "スピンオフ" },
 		{ href: "/discord", label: "Discord", subLabel: "Discord" },
 		{ href: "/coc", label: "CoC", subLabel: "行動規範" },
 		{ href: "/archives", label: "Archives", subLabel: "過去開催" },

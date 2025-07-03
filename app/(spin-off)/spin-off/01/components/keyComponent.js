@@ -5,7 +5,7 @@ const Sp01KeyComponent = () => {
 		<div className="container mx-auto">
 			<SpinOffTitle />
 			<Image
-				src="/spinoff/01/kv_01_hp.png"
+				src="/spin-off/01/kv_01_hp.png"
 				alt="AI×デザイナーのキャリアと未来"
 				width={2640}
 				height={1080}

@@ -26,7 +26,7 @@ const Footer = () => {
 			</h4>
 			<h5 className="font-josefin text-lg mt-3">
 				<Link href="/" className="text-background hover:no-underline">
-					CROSS DESIGNERS CAREER FES
+					X DESIGNERS CAREER FES
 				</Link>
 			</h5>
 			<section className="flex justify-center gap-4 mt-8 text-sm">
