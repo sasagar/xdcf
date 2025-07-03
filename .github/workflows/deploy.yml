@@ -36,7 +36,7 @@ jobs:
 
       - name: FTP Deploy
         # FTPデプロイできるアクションがあるので、それを利用する
-        uses: SamKirkland/FTP-Deploy-Action
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         # FTP接続に必要な環境変数を設定する
         with:
           # 例： username.sakura.ne.jp
