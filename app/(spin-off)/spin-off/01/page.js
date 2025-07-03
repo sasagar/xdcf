@@ -6,39 +6,45 @@ import Casts from "./components/casts";
 import Sp01KeyComponent from "./components/keyComponent";
 import Schedule from "./components/schedule";
 
+// OGP関連の諸々の指定項目を変数でまとめる
+const title = "AI×デザイナーのキャリアと未来";
+const description =
+	"2025年8月2日開催！ X Designers Career Fes（クロス・デザイナーズ・キャリア・フェス）スピンオフイベント";
+const url = "https://xdcf.jp/spin-off/01";
+const imageUrl = "https://xdcf.jp/spin-off/01/kv_01.png";
+const imageWidth = "2640";
+const imageHeight = "1080";
+
 export const metadata = {
-	title: "AI×デザイナーのキャリアと未来 | X Designers Career Fes",
-	description:
-		"2025年8月2日開催！ X Designers Career Fes（クロス・デザイナーズ・キャリア・フェス）スピンオフイベント",
+	title: `${title} | X Designers Career Fes`,
+	description: description,
 	icons: {
 		icon: "/logo.png",
 	},
 	openGraph: {
 		type: "website",
-		title: "AI×デザイナーのキャリアと未来",
-		description:
-			"2025年8月2日開催！ X Designers Career Fes（クロス・デザイナーズ・キャリア・フェス）スピンオフイベント",
+		title: title,
+		description: description,
 		siteName: "X Designers Career Fes",
-		url: "https://xdcf.jp/spin-off/01",
+		url: url,
 		images: {
-			url: "https://xdcf.jp/spin-off/01/kv_01.png",
-			width: 2640,
-			height: 1080,
-			alt: "AI×デザイナーのキャリアと未来 | 2025年8月2日開催！ X Designers Career Fes（クロス・デザイナーズ・キャリア・フェス）スピンオフイベント",
+			url: imageUrl,
+			width: imageWidth,
+			height: imageHeight,
+			alt: `${title} | ${description}`,
 		},
 	},
 	twitter: {
 		type: "website",
-		title: "AI×デザイナーのキャリアと未来",
-		description:
-			"2025年8月2日開催！ X Designers Career Fes（クロス・デザイナーズ・キャリア・フェス）スピンオフイベント",
+		title: title,
+		description: description,
 		siteName: "X Designers Career Fes",
-		url: "https://xdcf.jp/spin-off/01",
+		url: url,
 		images: {
-			url: "https://xdcf.jp/spin-off/01/kv_01.png",
-			width: 2640,
-			height: 1080,
-			alt: "AI×デザイナーのキャリアと未来 | 2025年8月2日開催！ X Designers Career Fes（クロス・デザイナーズ・キャリア・フェス）スピンオフイベント",
+			url: imageUrl,
+			width: imageWidth,
+			height: imageHeight,
+			alt: `${title} | ${description} `,
 		},
 		card: "summary",
 	},
@@ -63,8 +69,9 @@ const So01Page = () => {
 				<SectionTitle title="Concept" />
 				<article className="max-w-5xl mx-auto mt-4 md:mt-10 px-4 md:px-0">
 					<p className="leading-relaxed">
-						X DESIGNERS CAREER FES
-						みなさんにキャリアについて考えていただく座談会形式で開催していますが、スピンオフイベントの今回はプロの意見を聞いてみるパネルディスカッション形式でお送りします。
+						X DESIGNERS CAREER
+						FESでは、普段みなさんにキャリアについて考えていただく座談会形式で開催していますが、
+						今回はスピンオフイベントの今回はプロの意見を聞いてみるパネルディスカッション形式でお送りします。
 					</p>
 					<p className="leading-relaxed">
 						第一弾の今回は<strong>『グラフィック編』</strong>

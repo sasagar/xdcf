@@ -11,8 +11,8 @@ const Discord = () => {
 	return (
 		<div id="discord" className="">
 			<section>
+				<SectionTitleLong title="XDCF Discord Server" />
 				<article className="max-w-5xl mx-auto mt-10 px-4 md:px-0">
-					<SectionTitleLong title="XDCF Discord Server" />
 					<h2 className="text-3xl font-bold">XDCF Discordサーバーについて</h2>
 					<p className="leading-relaxed mt-6">
 						XDCFではDiscordを利用してコミュニティ内のコミュニケーションを取っています。
@@ -33,8 +33,8 @@ const Discord = () => {
 				</article>
 			</section>
 			<section>
+				<SectionTitleLong title="Server Rules" />
 				<article className="max-w-5xl mx-auto mt-10 px-4 md:px-0">
-					<SectionTitleLong title="Server Rules" />
 					<h2 className="text-3xl font-bold">XDCF Discordサーバー 利用規約</h2>
 					<p className="leading-relaxed mt-6">
 						本規約は、X DESIGNERS CAREER
@@ -127,7 +127,7 @@ const Discord = () => {
 
 					<h3 className="text-2xl font-bold mt-14">第7条（附則）</h3>
 					<p className="leading-relaxed mt-6">
-						本規約は[制定日]より施行します。
+						本規約は2025年6月23日より施行します。
 					</p>
 				</article>
 			</section>
