@@ -37,7 +37,7 @@ const metadataGenerator = (
 				height: imageHeight,
 				alt: `${title} | ${description} `,
 			},
-			card: "summary",
+			card: "summary_large_image",
 		},
 	};
 	return metadata;
