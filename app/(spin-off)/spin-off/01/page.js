@@ -13,9 +13,9 @@ const title = "AI×デザイナーのキャリアと未来";
 const description =
 	"2025年8月2日開催！ X Designers Career Fes（クロス・デザイナーズ・キャリア・フェス）スピンオフイベント";
 const url = "https://xdcf.jp/spin-off/01";
-const imageUrl = "https://xdcf.jp/spin-off/01/kv_01.png";
-const imageWidth = "2640";
-const imageHeight = "1080";
+const imageUrl = "https://xdcf.jp/spin-off/01/ogp_01.jpg";
+const imageWidth = "1200";
+const imageHeight = "630";
 const openAt = new Date("2025-07-03T00:00:00+09:00");
 const closeAt = new Date("2025-07-28T13:00:00+09:00");
 
