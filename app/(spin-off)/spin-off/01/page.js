@@ -1,12 +1,14 @@
 import { Icon } from "@iconify/react";
+import metadataGenerator from "@/app/functions/metadataGenerator";
 import About from "@/components/about";
+import LimitedLinkButton from "@/components/limitedLinkButton";
 import SectionTitle from "@/components/sectionTitle";
 import Sponsor from "@/components/sponsor";
 import Casts from "./components/casts";
 import Sp01KeyComponent from "./components/keyComponent";
 import Schedule from "./components/schedule";
 
-// OGP関連の諸々の指定項目を変数でまとめる
+// O諸々の指定項目を変数でまとめる
 const title = "AI×デザイナーのキャリアと未来";
 const description =
 	"2025年8月2日開催！ X Designers Career Fes（クロス・デザイナーズ・キャリア・フェス）スピンオフイベント";
@@ -14,56 +16,32 @@ const url = "https://xdcf.jp/spin-off/01";
 const imageUrl = "https://xdcf.jp/spin-off/01/kv_01.png";
 const imageWidth = "2640";
 const imageHeight = "1080";
+const openAt = new Date("2025-07-03T00:00:00+09:00");
+const closeAt = new Date("2025-07-28T13:00:00+09:00");
 
-export const metadata = {
-	title: `${title} | X Designers Career Fes`,
-	description: description,
-	icons: {
-		icon: "/logo.png",
-	},
-	openGraph: {
-		type: "website",
-		title: title,
-		description: description,
-		siteName: "X Designers Career Fes",
-		url: url,
-		images: {
-			url: imageUrl,
-			width: imageWidth,
-			height: imageHeight,
-			alt: `${title} | ${description}`,
-		},
-	},
-	twitter: {
-		type: "website",
-		title: title,
-		description: description,
-		siteName: "X Designers Career Fes",
-		url: url,
-		images: {
-			url: imageUrl,
-			width: imageWidth,
-			height: imageHeight,
-			alt: `${title} | ${description} `,
-		},
-		card: "summary",
-	},
-};
+export const metadata = metadataGenerator(
+	title,
+	description,
+	url,
+	imageUrl,
+	imageWidth,
+	imageHeight,
+);
 
 const So01Page = () => {
 	const link = "https://xdufes.connpass.com/event/358951/";
 	return (
 		<div>
 			<Sp01KeyComponent />
-			<a
+			<LimitedLinkButton
 				href={link}
-				target="_blank"
+				openAt={openAt}
+				closeAt={closeAt}
+				closedText="参加受付は終了しました"
 				className="mx-auto link-btn my-2"
-				rel="noreferrer"
 			>
 				無料で参加する
-				<Icon icon={"basil:share-box-outline"} />
-			</a>
+			</LimitedLinkButton>
 
 			<section>
 				<SectionTitle title="Concept" />

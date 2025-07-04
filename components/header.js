@@ -112,7 +112,7 @@ const Header = ({
 							{spinoffLink ? (
 								<LimitedLinkButton
 									href={spinoffLink}
-									className="link-btn"
+									className="link-btn px-4"
 									openAt={spinoffOpenAt}
 									closeAt={spinoffCloseAt}
 									hidden={true}
