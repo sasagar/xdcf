@@ -21,7 +21,12 @@ const Sponsor = () => {
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					<Image src={"/Adobe-logo@2x.png"} width={600} height={600} alt="" />
+					<Image
+						src={"/Adobe-logo@2x.png"}
+						width={512}
+						height={512}
+						alt="Adobe K.K."
+					/>
 				</a>
 			</div>
 		</section>
