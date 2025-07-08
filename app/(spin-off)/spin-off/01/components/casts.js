@@ -135,6 +135,21 @@ const Casts = () => {
 							</Link>
 						</p>
 					</Cast>
+					<Cast
+						title="ViViViT BOOST Career Advisor"
+						name="高橋 駿介"
+						img="/spin-off/01/takahashi.jpg"
+						x="512"
+						y="512"
+					>
+						<p>Web/IT/ゲーム業界のクリエイター専門の人材エージェントです。</p>
+						<p>
+							人材業界一筋のキャリア、マイナビクリエイターでトップセールス・マネージャーを経験後、現在はViViViT
+							BOOSTにてプレイングマネージャーをしています。
+							<br />
+							採用のことなら、企業の課題も、クリエイターのキャリアも、お気軽にご相談ください。
+						</p>
+					</Cast>
 				</div>
 				<div id="mc" className="">
 					<CastTitle title="MC" />
