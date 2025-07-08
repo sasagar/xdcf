@@ -149,6 +149,17 @@ const Casts = () => {
 							<br />
 							採用のことなら、企業の課題も、クリエイターのキャリアも、お気軽にご相談ください。
 						</p>
+						<p className="flex justify-start items-center gap-6">
+							<Link href="https://vivivit.co.jp/">
+								<Icon icon={"gis:globe-o"} />
+							</Link>
+							<Link href="https://x.com/vivivit_jp">
+								<Icon icon={"simple-icons:x"} />
+							</Link>
+							<Link href="https://www.instagram.com/vivivit_pr/">
+								<Icon icon={"simple-icons:instagram"} />
+							</Link>
+						</p>
 					</Cast>
 				</div>
 				<div id="mc" className="">
