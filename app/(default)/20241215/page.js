@@ -73,7 +73,7 @@ export default function Home() {
 					</p>
 				</article> */}
 				<Schedule />
-				<Casts />
+				{/* <Casts /> */}
 			</section>
 			<section>
 				<About

@@ -49,7 +49,7 @@ export default function Home() {
 			<section className="mt-20">
 				<SectionTitle title="Contents" />
 				<Schedule />
-				<Casts />
+				{/* <Casts /> */}
 			</section>
 			<section>
 				<About
