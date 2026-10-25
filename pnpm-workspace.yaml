@@ -1,3 +1,8 @@
 allowBuilds:
   '@biomejs/biome': true
   sharp: true
+
+overrides:
+  # next 15.5.28 は postcss を 8.4.31 に固定していて、postcss とその下の nanoid・source-map-js に
+  # pnpm audit の脆弱性が残る（2026-10）。next 15 系にはこれを直した版がないので、同じメジャーの直った版に上げる。
+  'postcss@<8.5.23': ^8.5.31
